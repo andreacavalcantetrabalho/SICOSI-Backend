@@ -28,17 +28,20 @@ module.exports = async (req, res) => {
       messages: [
         {
           role: "system",
-          content:
-            context?.role ||
-            "Você é um especialista em sustentabilidade e compras públicas.",
+          content: context?.role
+            ? `${context.role}. IMPORTANTE: Responda APENAS com JSON válido, sem texto adicional, sem markdown, sem explicações. Apenas o objeto JSON puro.`
+            : "Você é um especialista em sustentabilidade e compras públicas. IMPORTANTE: Responda APENAS com JSON válido, sem texto adicional, sem markdown, sem explicações.",
         },
         {
           role: "user",
-          content: prompt,
+          content:
+            prompt +
+            "\n\nRESPONDA APENAS COM JSON VÁLIDO, SEM TEXTO ADICIONAL. NÃO USE ```json NEM MARKDOWN.",
         },
       ],
       temperature: 0,
       max_tokens: 2000,
+      response_format: { type: "json_object" }, // ← ADICIONAR ESTA LINHA!
     });
 
     const aiResponse = completion.choices[0].message.content;
