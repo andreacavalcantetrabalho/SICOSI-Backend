@@ -1,0 +1,26 @@
+{
+  "name": "sicosi-backend",
+  "version": "1.0.0",
+  "description": "Backend APIs para SICOSI - Sistema de Compras Sustentáveis Inteligente",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "sustainability",
+    "procurement",
+    "api",
+    "groq",
+    "ai"
+  ],
+  "author": "Andre Cavalcante",
+  "license": "MIT",
+  "dependencies": {
+    "groq-sdk": "^0.7.0",
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
