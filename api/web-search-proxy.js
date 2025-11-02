@@ -133,20 +133,43 @@ LEMBRE-SE: TODAS as alternativas devem começar com "${productType}"`;
       messages: [
         {
           role: "system",
-          content: context?.role
-            ? `${context.role}. Use os resultados da busca web fornecidos. IMPORTANTE: Responda APENAS com JSON válido, sem texto adicional, sem markdown.`
-            : "Você é um especialista em produtos sustentáveis. Use os resultados da busca web. IMPORTANTE: Responda APENAS com JSON válido.",
+          content:
+            "Você é um especialista em produtos sustentáveis. Use os resultados da busca web fornecidos. Responda SEMPRE no formato JSON especificado.",
         },
         {
           role: "user",
-          content:
-            enrichedPrompt +
-            "\n\nRESPONDA APENAS COM JSON VÁLIDO, SEM TEXTO ADICIONAL.",
+          content: `${enrichedPrompt}
+            FORMATO OBRIGATÓRIO DA RESPOSTA (copie esta estrutura exatamente):
+
+            {
+              "isSustainable": false,
+              "reason": "Breve explicação em português",
+              "alternatives": [
+                {
+                  "name": "Nome completo do produto com marca e modelo",
+                  "benefits": [
+                    "Benefício 1 com dados mensuráveis",
+                    "Benefício 2 com dados mensuráveis",
+                    "Benefício 3 com dados mensuráveis"
+                  ],
+                  "searchTerms": [
+                    "termo de busca 1",
+                    "termo de busca 2"
+                  ]
+                }
+              ]
+            }
+
+            CRÍTICO:
+            - Não adicione texto antes ou depois do JSON
+            - Use exatamente os campos mostrados
+            - alternatives deve ter 2-3 produtos do tipo "${productType}"
+            - Todos os campos são obrigatórios`,
         },
       ],
       temperature: 0,
       max_tokens: 2000,
-      response_format: { type: "json_object" }, // ← ADICIONAR ESTA LINHA!
+      response_format: { type: "json_object" },
     });
 
     const aiResponse = completion.choices[0].message.content;
