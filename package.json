@@ -1,6 +1,6 @@
 {
   "name": "sicosi-backend",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Backend APIs para SICOSI - Sistema de Compras Sustentáveis Inteligente",
   "main": "index.js",
   "scripts": {
@@ -12,13 +12,15 @@
     "procurement",
     "api",
     "groq",
+    "tavily",
     "ai"
   ],
   "author": "Andre Cavalcante",
   "license": "MIT",
   "dependencies": {
     "groq-sdk": "^0.7.0",
-    "axios": "^1.6.0"
+    "axios": "^1.6.0",
+    "tavily": "^0.2.0"
   },
   "engines": {
     "node": ">=18.x"
