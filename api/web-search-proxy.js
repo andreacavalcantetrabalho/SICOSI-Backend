@@ -33,11 +33,22 @@ module.exports = async (req, res) => {
     console.log("🏷️ Tipo:", productType);
 
     // 1. BUSCAR COM TAVILY (profissional)
+    console.log("🔑 TAVILY_API_KEY existe?", !!process.env.TAVILY_API_KEY);
+    console.log("🔑 Primeiros 10 chars:", process.env.TAVILY_API_KEY?.substring(0, 10));
+
     const tavilyClient = new TavilyClient(process.env.TAVILY_API_KEY);
+
+    console.log("🌐 Buscando com Tavily:", productType, certifications);
     const tavilyResults = await tavilyClient.searchSustainableProducts(
       productType,
       certifications
     );
+
+    console.log("📊 Tavily retornou:");
+    console.log("  - results.length:", tavilyResults.results?.length || 0);
+    console.log("  - query:", tavilyResults.query);
+    console.log("  - error:", tavilyResults.error || "nenhum");
+    console.log("  - primeiros 2 resultados:", JSON.stringify(tavilyResults.results?.slice(0, 2), null, 2));
 
     // 2. FORMATAR CONTEXTO WEB
     const webContext = tavilyResults.results.length > 0
