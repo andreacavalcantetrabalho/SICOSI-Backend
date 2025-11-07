@@ -5,16 +5,22 @@ import alternativesData from '../../data/alternatives.json';
 
 // ===== TIPOS =====
 interface ProductInfo {
-  productName: string;
+  productName?: string;
+  product_name?: string;
   description?: string;
   pageUrl?: string;
+  product_url?: string;
   selectedText?: string;
   price?: string;
   images?: string[];
 }
 
 interface AnalysisRequest {
-  productInfo: ProductInfo;
+  productInfo?: ProductInfo;
+  product_name?: string;
+  productName?: string;
+  product_url?: string;
+  pageUrl?: string;
 }
 
 interface SustainabilityCriterion {
@@ -96,17 +102,33 @@ export default async function handler(
   }
 
   try {
-    const { productInfo } = req.body as AnalysisRequest;
+    const body = req.body as AnalysisRequest;
+
+    // Suportar múltiplos formatos de entrada
+    let productInfo: ProductInfo;
+
+    if (body.productInfo) {
+      // Formato antigo: { productInfo: { productName: "..." } }
+      productInfo = body.productInfo;
+    } else {
+      // Formato novo: { product_name: "...", product_url: "..." }
+      productInfo = {
+        productName: body.product_name || body.productName,
+        pageUrl: body.product_url || body.pageUrl
+      };
+    }
+
+    const finalProductName = productInfo.productName || productInfo.product_name;
 
     // Validação
-    if (!productInfo || !productInfo.productName) {
+    if (!finalProductName) {
       return res.status(400).json({
         success: false,
         error: 'productName is required'
       });
     }
 
-    console.log('📦 Analyzing product:', productInfo.productName);
+    console.log('📦 Analyzing product:', finalProductName);
 
     // Identificar categoria baseada nas keywords
     const category = identifyCategory(productInfo);
@@ -144,8 +166,9 @@ export default async function handler(
 
 // ===== IDENTIFICAR CATEGORIA =====
 function identifyCategory(productInfo: ProductInfo): string {
+  const productName = productInfo.productName || productInfo.product_name || '';
   const text = `
-    ${productInfo.productName || ''} 
+    ${productName} 
     ${productInfo.description || ''} 
     ${productInfo.selectedText || ''}
   `.toLowerCase();
@@ -187,6 +210,9 @@ async function analyzeWithGroq(
 
   const groq = new Groq({ apiKey: groqApiKey });
 
+  const productName = productInfo.productName || productInfo.product_name || '';
+  const pageUrl = productInfo.pageUrl || productInfo.product_url || '';
+
   // Preparar critérios para o prompt
   const criteriaText = Object.entries(categoryData.sustainability_criteria)
     .map(([key, value]) => {
@@ -201,9 +227,9 @@ async function analyzeWithGroq(
 Você é um especialista em sustentabilidade e análise de produtos.
 
 PRODUTO A ANALISAR:
-Nome: ${productInfo.productName}
+Nome: ${productName}
 Descrição: ${productInfo.description || 'Não fornecida'}
-URL: ${productInfo.pageUrl || 'Não fornecida'}
+URL: ${pageUrl}
 Categoria identificada: ${category} (${categoryData.name})
 
 CRITÉRIOS DE SUSTENTABILIDADE PARA ESTA CATEGORIA:
