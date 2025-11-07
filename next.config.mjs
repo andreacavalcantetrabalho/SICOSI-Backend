@@ -1,18 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-  
-  // Otimizações de build
   swcMinify: true,
   
-  // Configuração de variáveis de ambiente
-  env: {
-    GROQ_API_KEY: process.env.GROQ_API_KEY,
-    TAVILY_API_KEY: process.env.TAVILY_API_KEY,
-  },
-  
-  // Headers CORS para API routes
   async headers() {
     return [
       {
@@ -25,9 +16,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  
-  // Configuração de output para Vercel
-  output: 'standalone',
 };
 
-export default nextConfig;
+module.exports = nextConfig;
