@@ -1,13 +1,13 @@
 {
-  "version": "3.0",
-  "description": "Comprehensive sustainability guidelines for product evaluation across all categories - SICOSI System",
-  "lastUpdated": "2025-11-06",
-  "source": "Based on ISO standards, EU ESPR, EMBRAPA guidelines, and global sustainability certifications",
+  "version": "4.0",
+  "description": "Comprehensive sustainability guidelines for product evaluation across all categories - SICOSI System - Brazilian Market Focus",
+  "lastUpdated": "2025-11-07",
+  "source": "Based on ISO standards, EU ESPR, EMBRAPA guidelines, Brazilian certifications, and global sustainability standards",
   
   "categories": {
     "electronics": {
       "name": "Electronics & IT Equipment",
-      "keywords": ["smartphone", "laptop", "computer", "tablet", "monitor", "printer", "scanner", "camera", "headphones", "smartwatch", "electronic"],
+      "keywords": ["smartphone", "laptop", "computer", "tablet", "monitor", "printer", "scanner", "camera", "headphones", "smartwatch", "electronic", "iphone", "samsung", "dell", "hp"],
       "sustainability_criteria": {
         "durability": {
           "weight": 0.25,
@@ -45,7 +45,8 @@
             "Energy Star certified or equivalent",
             "Low standby power consumption (< 0.5W)",
             "Energy-efficient components (LED displays, etc.)",
-            "Power management features"
+            "Power management features",
+            "Procel certification (Brazil)"
           ]
         },
         "materials": {
@@ -59,13 +60,14 @@
           ]
         }
       },
-      "certifications": ["Energy Star", "EPEAT", "TCO Certified", "Blue Angel", "EU Ecolabel", "RoHS", "WEEE"],
-      "references": ["ISO 14001", "ESPR", "WEEE Directive", "RoHS Directive"]
+      "certifications": ["Energy Star", "EPEAT", "TCO Certified", "Blue Angel", "EU Ecolabel", "RoHS", "WEEE", "Procel (Brazil)"],
+      "references": ["ISO 14001", "ESPR", "WEEE Directive", "RoHS Directive"],
+      "brazilian_brands": ["Positivo (notebooks)", "Multilaser"]
     },
 
     "textiles_clothing": {
       "name": "Textiles, Clothing & Footwear",
-      "keywords": ["clothing", "shirt", "pants", "dress", "shoes", "sneakers", "boots", "jacket", "coat", "textile", "fabric", "apparel", "fashion"],
+      "keywords": ["clothing", "shirt", "pants", "dress", "shoes", "sneakers", "boots", "jacket", "coat", "textile", "fabric", "apparel", "fashion", "roupa", "calça", "camisa"],
       "sustainability_criteria": {
         "materials": {
           "weight": 0.30,
@@ -74,7 +76,8 @@
             "No harmful chemicals (OEKO-TEX Standard 100)",
             "Sustainable sourcing (BCI cotton, FSC viscose)",
             "Biodegradable or recyclable materials",
-            "Natural fibers preferred over synthetic"
+            "Natural fibers preferred over synthetic",
+            "Brazilian organic cotton"
           ]
         },
         "production": {
@@ -116,13 +119,14 @@
           ]
         }
       },
-      "certifications": ["GOTS", "OEKO-TEX", "Fair Trade", "Bluesign", "Cradle to Cradle", "BCI", "FSC"],
-      "references": ["ESPR textile ban", "ISO 14001", "SA8000"]
+      "certifications": ["GOTS", "OEKO-TEX", "Fair Trade", "Bluesign", "Cradle to Cradle", "BCI", "FSC", "IBD (Brazil)"],
+      "references": ["ESPR textile ban", "ISO 14001", "SA8000"],
+      "brazilian_brands": ["Osklen", "Farm Rio", "Veja/Vert Shoes", "Reserva", "Malwee", "Hering Sustentável", "Insecta Shoes"]
     },
 
     "food_agriculture": {
       "name": "Food & Agricultural Products",
-      "keywords": ["food", "coffee", "tea", "chocolate", "fruit", "vegetable", "meat", "fish", "dairy", "grain", "organic", "agriculture"],
+      "keywords": ["food", "coffee", "tea", "chocolate", "fruit", "vegetable", "meat", "fish", "dairy", "grain", "organic", "agriculture", "açaí", "castanha", "cupuaçu", "pirarucu", "tambaqui", "café", "cacau"],
       "sustainability_criteria": {
         "production_methods": {
           "weight": 0.30,
@@ -131,7 +135,9 @@
             "Regenerative agriculture practices",
             "Biodiversity conservation",
             "Soil health management",
-            "Integrated pest management"
+            "Integrated pest management",
+            "Agroforestry systems (SAFs)",
+            "Brazilian bioeconomy practices"
           ]
         },
         "environmental_impact": {
@@ -140,8 +146,9 @@
             "Low carbon footprint",
             "Efficient water use",
             "Minimal deforestation impact",
-            "Protection of natural habitats",
-            "Reduced greenhouse gas emissions"
+            "Protection of natural habitats (Amazon, Cerrado, Mata Atlântica)",
+            "Reduced greenhouse gas emissions",
+            "No conversion of native vegetation"
           ]
         },
         "social_ethics": {
@@ -151,7 +158,9 @@
             "Safe working conditions",
             "Support for local communities",
             "No child or forced labor",
-            "Gender equality"
+            "Gender equality",
+            "Support for indigenous communities",
+            "Quilombola community support"
           ]
         },
         "traceability": {
@@ -160,7 +169,8 @@
             "Clear supply chain transparency",
             "Origin labeling",
             "Certification verification available",
-            "Blockchain or digital tracking"
+            "Blockchain or digital tracking",
+            "SisOrg registration (Brazil)"
           ]
         },
         "packaging": {
@@ -173,13 +183,25 @@
           ]
         }
       },
-      "certifications": ["Organic", "Fairtrade", "Rainforest Alliance", "UTZ", "MSC", "ASC", "4C"],
-      "references": ["FAO Guidelines", "ISO 14001", "IFOAM"]
+      "certifications": ["Organic", "Fairtrade", "Rainforest Alliance", "UTZ", "MSC", "ASC", "4C", "IBD (Brazil)", "SisOrg (Brazil)", "Orgânico Brasil"],
+      "references": ["FAO Guidelines", "ISO 14001", "IFOAM", "EMBRAPA"],
+      "brazilian_products": [
+        "Açaí sustentável da Amazônia",
+        "Castanha-do-Pará certificada",
+        "Cupuaçu",
+        "Buriti",
+        "Pirarucu de manejo",
+        "Café orgânico brasileiro",
+        "Cacau da Bahia",
+        "Mel de abelhas nativas",
+        "Produtos da sociobiodiversidade"
+      ],
+      "brazilian_brands": ["Fazenda Futuro (plant-based)", "Native (açaí)", "Mãe Terra", "Jasmine", "Taeq Orgânicos"]
     },
 
     "construction_materials": {
       "name": "Construction Materials & Building Products",
-      "keywords": ["cement", "concrete", "steel", "wood", "lumber", "insulation", "paint", "tiles", "roofing", "construction", "building"],
+      "keywords": ["cement", "concrete", "steel", "wood", "lumber", "insulation", "paint", "tiles", "roofing", "construction", "building", "madeira", "cimento"],
       "sustainability_criteria": {
         "materials_sourcing": {
           "weight": 0.25,
@@ -188,7 +210,8 @@
             "Sustainably sourced raw materials",
             "Low embodied carbon",
             "Regional materials (< 500km transport)",
-            "Renewable materials preferred"
+            "Renewable materials preferred",
+            "FSC-certified Brazilian wood"
           ]
         },
         "environmental_impact": {
@@ -207,7 +230,8 @@
             "Long lifespan (> 25 years)",
             "Weather and wear resistance",
             "Low maintenance requirements",
-            "Structural integrity over time"
+            "Structural integrity over time",
+            "Tropical climate resistance"
           ]
         },
         "energy_performance": {
@@ -229,13 +253,14 @@
           ]
         }
       },
-      "certifications": ["LEED", "BREEAM", "Cradle to Cradle", "FSC", "EPD", "Green Guard"],
-      "references": ["ISO 21930", "ISO 14001", "EU Green Building"]
+      "certifications": ["LEED", "BREEAM", "Cradle to Cradle", "FSC", "EPD", "Green Guard", "AQUA-HQE (Brazil)", "Procel Edifica"],
+      "references": ["ISO 21930", "ISO 14001", "EU Green Building", "ABNT NBR 15575"],
+      "brazilian_materials": ["Madeira de reflorestamento", "Bambu brasileiro", "Fibras naturais (sisal, juta)"]
     },
 
     "furniture": {
       "name": "Furniture & Home Furnishings",
-      "keywords": ["furniture", "chair", "table", "desk", "sofa", "bed", "cabinet", "shelf", "mattress"],
+      "keywords": ["furniture", "chair", "table", "desk", "sofa", "bed", "cabinet", "shelf", "mattress", "móvel", "cadeira", "mesa"],
       "sustainability_criteria": {
         "materials": {
           "weight": 0.30,
@@ -244,7 +269,8 @@
             "Recycled or recyclable materials",
             "No harmful chemicals (formaldehyde-free)",
             "Natural or low-impact finishes",
-            "Renewable materials"
+            "Renewable materials",
+            "Brazilian certified wood"
           ]
         },
         "durability": {
@@ -287,12 +313,13 @@
         }
       },
       "certifications": ["FSC", "PEFC", "Green Guard", "Cradle to Cradle", "EU Ecolabel"],
-      "references": ["ESPR 2025-2030", "ISO 14001"]
+      "references": ["ESPR 2025-2030", "ISO 14001"],
+      "brazilian_brands": ["Tok&Stok Sustentável", "Etel", "Schuster (madeira certificada)"]
     },
 
     "cosmetics_personal_care": {
       "name": "Cosmetics & Personal Care Products",
-      "keywords": ["cosmetics", "shampoo", "soap", "lotion", "cream", "makeup", "perfume", "deodorant", "toothpaste", "skincare"],
+      "keywords": ["cosmetics", "shampoo", "soap", "lotion", "cream", "makeup", "perfume", "deodorant", "toothpaste", "skincare", "sabonete", "creme", "maquiagem"],
       "sustainability_criteria": {
         "ingredients": {
           "weight": 0.35,
@@ -301,7 +328,8 @@
             "No harmful chemicals (parabens, phthalates, etc.)",
             "Biodegradable formulations",
             "No microplastics",
-            "Sustainably sourced ingredients"
+            "Sustainably sourced ingredients",
+            "Brazilian biodiversity ingredients (buriti, cupuaçu, etc.)"
           ]
         },
         "animal_welfare": {
@@ -329,7 +357,8 @@
             "Energy-efficient manufacturing",
             "Water conservation",
             "Fair trade ingredients",
-            "Local sourcing where possible"
+            "Local sourcing where possible",
+            "Support for Brazilian communities"
           ]
         },
         "transparency": {
@@ -342,13 +371,14 @@
           ]
         }
       },
-      "certifications": ["COSMOS", "Ecocert", "Leaping Bunny", "Vegan Society", "USDA Organic", "Natrue"],
-      "references": ["EU Cosmetics Regulation", "ISO 16128"]
+      "certifications": ["COSMOS", "Ecocert", "Leaping Bunny", "Vegan Society", "USDA Organic", "Natrue", "IBD (Brazil)"],
+      "references": ["EU Cosmetics Regulation", "ISO 16128", "ANVISA (Brazil)"],
+      "brazilian_brands": ["Natura", "Granado", "Simple Organic", "Surya Brasil", "Cativa Natureza", "Amo Ser Natural"]
     },
 
     "toys_games": {
       "name": "Toys & Games",
-      "keywords": ["toy", "game", "puzzle", "doll", "action figure", "board game", "educational toy", "children"],
+      "keywords": ["toy", "game", "puzzle", "doll", "action figure", "board game", "educational toy", "children", "brinquedo", "jogo"],
       "sustainability_criteria": {
         "materials": {
           "weight": 0.30,
@@ -363,7 +393,7 @@
         "safety": {
           "weight": 0.25,
           "guidelines": [
-            "Meets safety standards (EN71, ASTM F963)",
+            "Meets safety standards (EN71, ASTM F963, INMETRO)",
             "No small parts for young children",
             "Durable construction",
             "Non-toxic paints and finishes",
@@ -398,18 +428,19 @@
           ]
         }
       },
-      "certifications": ["FSC", "GOTS", "Oeko-Tex", "CE Mark", "Fair Trade"],
-      "references": ["EN71", "ASTM F963", "ISO 8124"]
+      "certifications": ["FSC", "GOTS", "Oeko-Tex", "CE Mark", "Fair Trade", "INMETRO (Brazil)"],
+      "references": ["EN71", "ASTM F963", "ISO 8124"],
+      "brazilian_brands": ["Carlu Brinquedos", "Pais & Filhos", "Xalingo"]
     },
 
     "medical_equipment": {
       "name": "Medical Equipment & Healthcare Products",
-      "keywords": ["medical", "healthcare", "hospital", "diagnostic", "surgical", "medical device", "equipment"],
+      "keywords": ["medical", "healthcare", "hospital", "diagnostic", "surgical", "medical device", "equipment", "saúde", "hospitalar"],
       "sustainability_criteria": {
         "safety_efficacy": {
           "weight": 0.35,
           "guidelines": [
-            "Meets medical device regulations",
+            "Meets medical device regulations (ANVISA, FDA, CE)",
             "Clinical efficacy proven",
             "Patient safety prioritized",
             "Biocompatibility tested",
@@ -456,13 +487,13 @@
           ]
         }
       },
-      "certifications": ["CE Mark", "FDA Approval", "ISO 13485", "ISO 14001"],
-      "references": ["MDR", "IVDR", "ISO 13485", "ISO 14971"]
+      "certifications": ["CE Mark", "FDA Approval", "ISO 13485", "ISO 14001", "ANVISA (Brazil)"],
+      "references": ["MDR", "IVDR", "ISO 13485", "ISO 14971", "RDC ANVISA"]
     },
 
     "office_supplies": {
       "name": "Office Supplies & Stationery",
-      "keywords": ["paper", "pen", "pencil", "notebook", "folder", "stapler", "office", "stationery"],
+      "keywords": ["paper", "pen", "pencil", "notebook", "folder", "stapler", "office", "stationery", "papel", "caneta", "caderno"],
       "sustainability_criteria": {
         "materials": {
           "weight": 0.35,
@@ -502,13 +533,14 @@
           ]
         }
       },
-      "certifications": ["FSC", "Blue Angel", "EU Ecolabel", "Nordic Swan"],
-      "references": ["ISO 14001", "EPA Guidelines"]
+      "certifications": ["FSC", "Blue Angel", "EU Ecolabel", "Nordic Swan", "ABNT (Brazil)"],
+      "references": ["ISO 14001", "EPA Guidelines"],
+      "brazilian_brands": ["Faber-Castell EcoLápis", "Tilibra Sustentável"]
     },
 
     "cleaning_products": {
       "name": "Cleaning Products & Household Chemicals",
-      "keywords": ["detergent", "soap", "cleaner", "disinfectant", "bleach", "cleaning", "household"],
+      "keywords": ["detergent", "soap", "cleaner", "disinfectant", "bleach", "cleaning", "household", "detergente", "sabão", "limpeza"],
       "sustainability_criteria": {
         "ingredients": {
           "weight": 0.35,
@@ -517,7 +549,8 @@
             "Plant-based formulations",
             "No harmful chemicals",
             "Non-toxic to aquatic life",
-            "Phosphate-free"
+            "Phosphate-free",
+            "Brazilian biodegradable surfactants"
           ]
         },
         "packaging": {
@@ -549,22 +582,24 @@
           ]
         }
       },
-      "certifications": ["EU Ecolabel", "Nordic Swan", "Ecocert", "Leaping Bunny", "EPA Safer Choice"],
-      "references": ["ISO 14001", "EU Detergents Regulation"]
+      "certifications": ["EU Ecolabel", "Nordic Swan", "Ecocert", "Leaping Bunny", "EPA Safer Choice", "ABNT (Brazil)"],
+      "references": ["ISO 14001", "EU Detergents Regulation"],
+      "brazilian_brands": ["Ypê Sustentável", "Positiva", "Biowash"]
     },
 
     "automotive": {
       "name": "Automotive & Transportation",
-      "keywords": ["car", "vehicle", "automobile", "truck", "motorcycle", "electric vehicle", "hybrid"],
+      "keywords": ["car", "vehicle", "automobile", "truck", "motorcycle", "electric vehicle", "hybrid", "carro", "veículo", "moto"],
       "sustainability_criteria": {
         "emissions": {
           "weight": 0.30,
           "guidelines": [
             "Electric or hybrid preferred",
             "Low CO2 emissions (< 95g/km EU)",
-            "Euro 6 or better",
-            "Alternative fuels",
-            "Zero emission capable"
+            "Euro 6 or better / Proconve L7 (Brazil)",
+            "Alternative fuels (ethanol, biodiesel)",
+            "Zero emission capable",
+            "Flex-fuel technology (Brazil)"
           ]
         },
         "efficiency": {
@@ -574,7 +609,8 @@
             "Lightweight design",
             "Aerodynamic optimization",
             "Energy recovery systems",
-            "Efficient powertrains"
+            "Efficient powertrains",
+            "Ethanol compatibility (Brazil)"
           ]
         },
         "materials": {
@@ -607,13 +643,14 @@
           ]
         }
       },
-      "certifications": ["Euro NCAP", "ISO 14001", "ISO 14040"],
-      "references": ["EU CO2 Standards", "ESPR future"]
+      "certifications": ["Euro NCAP", "ISO 14001", "ISO 14040", "Proconve (Brazil)", "Inovar-Auto"],
+      "references": ["EU CO2 Standards", "ESPR future", "Proconve (Brazil)"],
+      "brazilian_context": ["Ethanol/flex-fuel priority", "Biodiesel B10+", "Sugarcane ethanol advantage"]
     },
 
     "digital_products_software": {
       "name": "Digital Products & Software",
-      "keywords": ["software", "app", "application", "digital service", "cloud", "SaaS", "platform", "AI", "machine learning"],
+      "keywords": ["software", "app", "application", "digital service", "cloud", "SaaS", "platform", "AI", "machine learning", "aplicativo", "sistema"],
       "sustainability_criteria": {
         "energy_efficiency": {
           "weight": 0.40,
@@ -693,7 +730,7 @@
 
     "cloud_services": {
       "name": "Cloud Services & Data Centers",
-      "keywords": ["cloud", "hosting", "server", "data center", "storage", "computing", "infrastructure"],
+      "keywords": ["cloud", "hosting", "server", "data center", "storage", "computing", "infrastructure", "nuvem", "servidor"],
       "sustainability_criteria": {
         "energy_source": {
           "weight": 0.35,
@@ -750,7 +787,7 @@
 
     "packaging": {
       "name": "Packaging Materials",
-      "keywords": ["packaging", "box", "container", "wrapper", "bag", "bottle", "can"],
+      "keywords": ["packaging", "box", "container", "wrapper", "bag", "bottle", "can", "embalagem", "caixa", "saco"],
       "sustainability_criteria": {
         "materials": {
           "weight": 0.35,
@@ -759,7 +796,8 @@
             "Recyclable materials",
             "Biodegradable or compostable",
             "Renewable materials",
-            "Minimal plastic use"
+            "Minimal plastic use",
+            "Brazilian recycled materials"
           ]
         },
         "design": {
@@ -791,13 +829,13 @@
           ]
         }
       },
-      "certifications": ["FSC", "Cradle to Cradle", "OK Compost", "EU Ecolabel"],
-      "references": ["EU Packaging Directive", "ISO 18601"]
+      "certifications": ["FSC", "Cradle to Cradle", "OK Compost", "EU Ecolabel", "ABNT (Brazil)"],
+      "references": ["EU Packaging Directive", "ISO 18601", "Política Nacional de Resíduos Sólidos (Brazil)"]
     },
 
     "energy_utilities": {
       "name": "Energy & Utilities",
-      "keywords": ["electricity", "gas", "energy", "utility", "power", "renewable energy", "solar", "wind"],
+      "keywords": ["electricity", "gas", "energy", "utility", "power", "renewable energy", "solar", "wind", "energia", "eletricidade"],
       "sustainability_criteria": {
         "energy_source": {
           "weight": 0.45,
@@ -806,7 +844,9 @@
             "Low carbon intensity",
             "No fossil fuels",
             "Certified green energy",
-            "Local generation"
+            "Local generation",
+            "Hydroelectric (Brazilian context)",
+            "Solar and wind expansion"
           ]
         },
         "efficiency": {
@@ -838,13 +878,14 @@
           ]
         }
       },
-      "certifications": ["Green-e", "EKOenergy", "ISO 50001"],
-      "references": ["EU Renewable Energy Directive", "ISO 50001"]
+      "certifications": ["Green-e", "EKOenergy", "ISO 50001", "I-REC (Brazil)"],
+      "references": ["EU Renewable Energy Directive", "ISO 50001"],
+      "brazilian_context": ["Hydroelectric dominance", "Solar expansion", "Wind energy growth", "Biomass from sugarcane"]
     },
 
     "financial_services": {
       "name": "Financial Services & Banking",
-      "keywords": ["bank", "insurance", "investment", "loan", "credit", "financial", "fund"],
+      "keywords": ["bank", "insurance", "investment", "loan", "credit", "financial", "fund", "banco", "investimento", "seguro"],
       "sustainability_criteria": {
         "investment_policy": {
           "weight": 0.35,
@@ -853,7 +894,8 @@
             "Exclusion of fossil fuels",
             "Green bonds and sustainable finance",
             "Impact investing",
-            "Climate risk assessment"
+            "Climate risk assessment",
+            "Amazon preservation financing"
           ]
         },
         "operations": {
@@ -885,13 +927,14 @@
           ]
         }
       },
-      "certifications": ["B Corp", "ISO 14001", "TCFD"],
-      "references": ["EU Taxonomy", "TCFD", "SFDR"]
+      "certifications": ["B Corp", "ISO 14001", "TCFD", "Principles for Responsible Banking"],
+      "references": ["EU Taxonomy", "TCFD", "SFDR"],
+      "brazilian_banks": ["Itaú Unibanco (sustainability leader)", "Bradesco Sustentabilidade", "Banco do Brasil Agro Sustentável"]
     },
 
     "travel_tourism": {
       "name": "Travel & Tourism",
-      "keywords": ["hotel", "travel", "tourism", "accommodation", "resort", "airline", "cruise"],
+      "keywords": ["hotel", "travel", "tourism", "accommodation", "resort", "airline", "cruise", "viagem", "turismo", "hospedagem"],
       "sustainability_criteria": {
         "environmental_management": {
           "weight": 0.30,
@@ -900,7 +943,8 @@
             "Water conservation",
             "Waste reduction",
             "Renewable energy use",
-            "Carbon offset programs"
+            "Carbon offset programs",
+            "Protection of Brazilian ecosystems"
           ]
         },
         "local_community": {
@@ -910,7 +954,8 @@
             "Fair wages",
             "Community engagement",
             "Cultural preservation",
-            "Local sourcing"
+            "Local sourcing",
+            "Support for indigenous tourism"
           ]
         },
         "biodiversity": {
@@ -919,7 +964,8 @@
             "Wildlife protection",
             "Habitat conservation",
             "Responsible wildlife tourism",
-            "No exploitation of animals"
+            "No exploitation of animals",
+            "Amazon and Pantanal conservation"
           ]
         },
         "operations": {
@@ -941,12 +987,433 @@
         }
       },
       "certifications": ["Green Key", "EarthCheck", "Travelife", "Green Globe", "ISO 21401"],
-      "references": ["ISO 21401", "GSTC Criteria"]
+      "references": ["ISO 21401", "GSTC Criteria"],
+      "brazilian_examples": ["Ecoturismo na Amazônia", "Turismo de base comunitária", "Hotéis sustentáveis no Pantanal"]
+    },
+
+    "pet_care": {
+      "name": "Pet Care & Pet Products",
+      "keywords": ["pet", "dog", "cat", "animal", "pet food", "pet toy", "pet bed", "collar", "leash", "ração", "cachorro", "gato", "animal de estimação"],
+      "sustainability_criteria": {
+        "ingredients_materials": {
+          "weight": 0.30,
+          "guidelines": [
+            "Sustainable protein sources (insect protein, upcycled ingredients)",
+            "Organic ingredients",
+            "No harmful chemicals or additives",
+            "Biodegradable materials for toys and accessories",
+            "Recycled materials (ocean-bound plastic collars)",
+            "Natural fibers for beds and toys"
+          ]
+        },
+        "packaging": {
+          "weight": 0.25,
+          "guidelines": [
+            "Recyclable packaging",
+            "Minimal packaging",
+            "Refillable options",
+            "Compostable bags",
+            "Bulk purchasing options"
+          ]
+        },
+        "production": {
+          "weight": 0.20,
+          "guidelines": [
+            "Ethical sourcing",
+            "Low carbon footprint",
+            "Water-efficient production",
+            "Fair labor practices",
+            "Local production preferred"
+          ]
+        },
+        "animal_welfare": {
+          "weight": 0.15,
+          "guidelines": [
+            "Cruelty-free testing",
+            "Humane ingredient sourcing",
+            "No animal testing",
+            "Ethical meat sourcing (if applicable)"
+          ]
+        },
+        "end_of_life": {
+          "weight": 0.10,
+          "guidelines": [
+            "Biodegradable products",
+            "Recyclable components",
+            "Compostable waste bags",
+            "Take-back programs"
+          ]
+        }
+      },
+      "certifications": ["USDA Organic", "Fair Trade", "B Corp", "Leaping Bunny", "FSC (for wood toys)"],
+      "references": ["AAFCO (pet food standards)", "ISO 14001"],
+      "brazilian_brands": ["PremieRpet Orgânico", "Petland Sustentável", "Zee.Dog (ocean plastic collars)"],
+      "sustainable_alternatives": [
+        "Insect-based protein pet food",
+        "Upcycled ingredient pet food",
+        "Biodegradable poop bags",
+        "Natural rubber toys",
+        "Hemp or organic cotton beds",
+        "Recycled plastic collars and leashes",
+        "Sustainable cat litter (wood pellets, corn-based)"
+      ]
+    },
+
+    "water_conservation": {
+      "name": "Water Conservation & Water Products",
+      "keywords": ["water", "filter", "purifier", "shower", "faucet", "rainwater", "water saving", "água", "filtro", "chuveiro", "torneira"],
+      "sustainability_criteria": {
+        "water_efficiency": {
+          "weight": 0.35,
+          "guidelines": [
+            "Low flow rate (< 6L/min for showers)",
+            "Water-saving technology",
+            "Efficient filtration",
+            "Minimal water waste",
+            "Smart water monitoring"
+          ]
+        },
+        "materials": {
+          "weight": 0.25,
+          "guidelines": [
+            "Durable materials",
+            "Recyclable components",
+            "No harmful chemicals",
+            "Plastic-free filters preferred",
+            "Long-lasting construction"
+          ]
+        },
+        "effectiveness": {
+          "weight": 0.20,
+          "guidelines": [
+            "High filtration efficiency",
+            "Maintains water pressure",
+            "Long filter lifespan",
+            "Effective contaminant removal",
+            "NSF/ANSI certified"
+          ]
+        },
+        "installation_maintenance": {
+          "weight": 0.10,
+          "guidelines": [
+            "Easy installation",
+            "Low maintenance",
+            "Replaceable parts available",
+            "Clear instructions",
+            "DIY-friendly"
+          ]
+        },
+        "end_of_life": {
+          "weight": 0.10,
+          "guidelines": [
+            "Recyclable filters",
+            "Take-back programs",
+            "Biodegradable components",
+            "Refurbishment options"
+          ]
+        }
+      },
+      "certifications": ["WaterSense", "NSF/ANSI", "ISO 14001", "Procel (Brazil)"],
+      "references": ["ISO 14046 (Water Footprint)", "Alliance for Water Stewardship"],
+      "brazilian_context": ["Water scarcity in Northeast", "Rainwater harvesting systems", "Greywater reuse"],
+      "products": [
+        "Low-flow showerheads",
+        "Aerator faucets",
+        "Rainwater harvesting systems",
+        "Greywater recycling systems",
+        "Plastic-free water filters",
+        "Smart water meters",
+        "Dual-flush toilets"
+      ]
+    },
+
+    "menstrual_baby_products": {
+      "name": "Menstrual & Baby Products",
+      "keywords": ["menstrual", "period", "baby", "diaper", "absorvente", "fralda", "bebê", "menstruação", "calcinha absorvente"],
+      "sustainability_criteria": {
+        "materials": {
+          "weight": 0.35,
+          "guidelines": [
+            "Organic cotton",
+            "No harmful chemicals (chlorine-free)",
+            "Biodegradable materials",
+            "Reusable options preferred",
+            "Medical-grade silicone (menstrual cups)",
+            "Natural fibers"
+          ]
+        },
+        "reusability": {
+          "weight": 0.25,
+          "guidelines": [
+            "Reusable products preferred (cloth diapers, menstrual cups)",
+            "Long lifespan (> 2 years)",
+            "Easy to clean",
+            "Durable construction",
+            "Cost-effective over time"
+          ]
+        },
+        "safety": {
+          "weight": 0.20,
+          "guidelines": [
+            "Hypoallergenic",
+            "Dermatologically tested",
+            "No toxic chemicals",
+            "pH-balanced",
+            "Safe for sensitive skin"
+          ]
+        },
+        "packaging": {
+          "weight": 0.10,
+          "guidelines": [
+            "Minimal packaging",
+            "Recyclable or compostable",
+            "Plastic-free",
+            "Bulk options"
+          ]
+        },
+        "end_of_life": {
+          "weight": 0.10,
+          "guidelines": [
+            "Biodegradable (disposable products)",
+            "Compostable",
+            "Recyclable components",
+            "Proper disposal instructions"
+          ]
+        }
+      },
+      "certifications": ["GOTS", "OEKO-TEX", "USDA Organic", "Ecocert", "ANVISA (Brazil)"],
+      "references": ["ISO 14001", "ANVISA regulations"],
+      "brazilian_brands": ["Pantys (period underwear)", "Korui (menstrual cups)", "Nós e o Davi (cloth diapers)", "Herself (organic pads)"],
+      "products": [
+        "Menstrual cups",
+        "Period underwear",
+        "Reusable cloth pads",
+        "Organic disposable pads",
+        "Cloth diapers",
+        "Biodegradable diapers",
+        "Organic baby wipes"
+      ]
+    },
+
+    "garden_urban_agriculture": {
+      "name": "Garden & Urban Agriculture Products",
+      "keywords": ["garden", "compost", "seeds", "plants", "urban farming", "gardening", "jardim", "composteira", "sementes", "horta"],
+      "sustainability_criteria": {
+        "organic_practices": {
+          "weight": 0.35,
+          "guidelines": [
+            "Organic seeds (non-GMO, heirloom)",
+            "No synthetic pesticides",
+            "Natural fertilizers",
+            "Composting support",
+            "Biodiversity promotion",
+            "Native Brazilian seeds"
+          ]
+        },
+        "materials": {
+          "weight": 0.25,
+          "guidelines": [
+            "Biodegradable pots",
+            "Recycled materials for tools",
+            "Sustainable wood (FSC)",
+            "Natural fibers",
+            "Plastic-free options"
+          ]
+        },
+        "water_efficiency": {
+          "weight": 0.20,
+          "guidelines": [
+            "Drip irrigation systems",
+            "Water-saving techniques",
+            "Rainwater harvesting compatible",
+            "Drought-resistant plants",
+            "Mulching materials"
+          ]
+        },
+        "education": {
+          "weight": 0.10,
+          "guidelines": [
+            "Clear instructions",
+            "Educational resources",
+            "Community support",
+            "Permaculture principles",
+            "Agroecology focus"
+          ]
+        },
+        "local_adaptation": {
+          "weight": 0.10,
+          "guidelines": [
+            "Climate-appropriate plants",
+            "Native species",
+            "Regional adaptation",
+            "Tropical climate suitability"
+          ]
+        }
+      },
+      "certifications": ["Organic", "Non-GMO", "Demeter (Biodynamic)", "IBD (Brazil)", "SisOrg"],
+      "references": ["EMBRAPA", "Agroecology principles", "Permaculture"],
+      "brazilian_brands": ["Isla Sementes", "Feltrin Sementes Orgânicas", "Morada da Floresta", "Hortiescolha"],
+      "products": [
+        "Organic seeds (heirloom, native)",
+        "Home composters",
+        "Biodegradable pots",
+        "Natural fertilizers",
+        "Drip irrigation kits",
+        "Rainwater collection systems",
+        "Gardening tools (recycled materials)",
+        "Vertical garden systems"
+      ]
+    },
+
+    "reusable_zero_waste": {
+      "name": "Reusable & Zero Waste Products",
+      "keywords": ["reusable", "zero waste", "straw", "bag", "bottle", "container", "wrap", "reutilizável", "lixo zero", "canudo", "garrafa"],
+      "sustainability_criteria": {
+        "reusability": {
+          "weight": 0.35,
+          "guidelines": [
+            "Designed for multiple uses (> 1000 uses)",
+            "Durable construction",
+            "Easy to clean",
+            "Dishwasher safe",
+            "Long lifespan (> 5 years)"
+          ]
+        },
+        "materials": {
+          "weight": 0.30,
+          "guidelines": [
+            "Food-safe materials",
+            "BPA-free",
+            "Non-toxic",
+            "Sustainable materials (bamboo, stainless steel, glass)",
+            "Recycled content",
+            "Biodegradable at end of life"
+          ]
+        },
+        "functionality": {
+          "weight": 0.20,
+          "guidelines": [
+            "Practical design",
+            "Portable",
+            "Leak-proof",
+            "Temperature retention (bottles)",
+            "Versatile use"
+          ]
+        },
+        "packaging": {
+          "weight": 0.10,
+          "guidelines": [
+            "Minimal packaging",
+            "Plastic-free",
+            "Recyclable",
+            "Reusable packaging"
+          ]
+        },
+        "end_of_life": {
+          "weight": 0.05,
+          "guidelines": [
+            "Recyclable",
+            "Biodegradable components",
+            "Take-back programs",
+            "Repair services"
+          ]
+        }
+      },
+      "certifications": ["FDA Approved", "LFGB", "BPA-Free", "FSC (bamboo products)"],
+      "references": ["Zero Waste International Alliance", "ISO 14001"],
+      "brazilian_brands": ["Menos 1 Lixo", "Eccaplan", "Positiv.a", "Dobra"],
+      "products": [
+        "Reusable water bottles (stainless steel, glass)",
+        "Bamboo or metal straws",
+        "Reusable shopping bags (cotton, jute)",
+        "Beeswax food wraps",
+        "Silicone food storage bags",
+        "Reusable coffee cups",
+        "Stainless steel lunch boxes",
+        "Cloth produce bags",
+        "Reusable cutlery sets"
+      ]
+    },
+
+    "sharing_economy_services": {
+      "name": "Sharing Economy & Circular Services",
+      "keywords": ["sharing", "rental", "repair", "refurbish", "second-hand", "circular", "aluguel", "conserto", "compartilhamento", "economia circular"],
+      "sustainability_criteria": {
+        "resource_efficiency": {
+          "weight": 0.35,
+          "guidelines": [
+            "Maximizes product utilization",
+            "Reduces need for new production",
+            "Extends product lifespan",
+            "Efficient logistics",
+            "Asset sharing optimization"
+          ]
+        },
+        "accessibility": {
+          "weight": 0.25,
+          "guidelines": [
+            "Affordable pricing",
+            "Easy access",
+            "User-friendly platform",
+            "Wide availability",
+            "Inclusive service"
+          ]
+        },
+        "quality_maintenance": {
+          "weight": 0.20,
+          "guidelines": [
+            "Regular maintenance",
+            "Quality assurance",
+            "Professional repairs",
+            "Certified technicians",
+            "Warranty on repairs"
+          ]
+        },
+        "transparency": {
+          "weight": 0.10,
+          "guidelines": [
+            "Clear terms and conditions",
+            "Transparent pricing",
+            "Product history disclosure",
+            "Sustainability impact reporting"
+          ]
+        },
+        "environmental_impact": {
+          "weight": 0.10,
+          "guidelines": [
+            "Carbon footprint reduction",
+            "Waste reduction",
+            "Circular economy integration",
+            "Green logistics"
+          ]
+        }
+      },
+      "certifications": ["B Corp", "ISO 14001", "Circular Economy certification"],
+      "references": ["Ellen MacArthur Foundation", "Circular Economy principles"],
+      "brazilian_examples": [
+        "Bike sharing (Tembici, Yellow)",
+        "Car sharing (Turbi, Kovi)",
+        "Clothing rental (Roupateca, Troc)",
+        "Electronics repair (iPlace, assistências autorizadas)",
+        "Furniture rental (Mobly Aluguel)",
+        "Tool libraries",
+        "Second-hand marketplaces (OLX, Enjoei)"
+      ],
+      "services": [
+        "Product rental services",
+        "Repair and refurbishment",
+        "Second-hand marketplaces",
+        "Clothing swaps",
+        "Tool libraries",
+        "Car/bike sharing",
+        "Co-working spaces",
+        "Product-as-a-service models"
+      ]
     },
 
     "general": {
       "name": "General Products",
-      "keywords": ["product", "item", "goods", "thing", "object"],
+      "keywords": ["product", "item", "goods", "thing", "object", "produto", "item", "coisa"],
       "sustainability_criteria": {
         "durability": {
           "weight": 0.30,
@@ -1015,7 +1482,8 @@
       "Support for local communities",
       "Diversity and inclusion in workforce",
       "Gender equality",
-      "Worker empowerment"
+      "Worker empowerment",
+      "Indigenous rights protection (Brazil)"
     ],
     "transparency": [
       "Clear supply chain visibility",
@@ -1032,42 +1500,68 @@
       "Wildlife conservation",
       "Sustainable land use",
       "Ecosystem restoration",
-      "Pollinator protection"
+      "Pollinator protection",
+      "Amazon preservation (Brazil)",
+      "Cerrado and Mata Atlântica protection"
     ],
     "water_stewardship": [
       "Efficient water use",
       "Water recycling",
       "Pollution prevention",
       "Watershed protection",
-      "Water-stressed region awareness"
+      "Water-stressed region awareness",
+      "Rainwater harvesting",
+      "Greywater reuse"
     ]
+  },
+
+  "brazilian_certifications": {
+    "IBD": "Brazilian organic certification",
+    "SisOrg": "Brazilian organic conformity assessment system",
+    "Procel": "Brazilian energy efficiency label",
+    "INMETRO": "Brazilian product quality and safety certification",
+    "ABNT": "Brazilian technical standards",
+    "Orgânico Brasil": "Official Brazilian organic seal",
+    "I-REC": "International Renewable Energy Certificate (used in Brazil)",
+    "AQUA-HQE": "Brazilian sustainable building certification",
+    "Proconve": "Brazilian vehicle emissions program",
+    "Selo Combustível Social": "Brazilian biodiesel social certification"
   },
 
   "evaluation_methodology": {
     "description": "How to use these guidelines for product evaluation",
     "steps": [
-      "1. Extract product information from user context (text selection, page title, etc.)",
+      "1. Extract product information from user context (text selection, page title, URL)",
       "2. Use web search to gather additional product details",
-      "3. Identify the most relevant product category based on keywords",
+      "3. Identify the most relevant product category based on keywords (fuzzy matching)",
       "4. Apply category-specific sustainability criteria with their weights",
-      "5. Check for recognized certifications mentioned",
+      "5. Check for recognized certifications mentioned (international and Brazilian)",
       "6. Evaluate against general sustainability principles",
-      "7. Use Groq LLM to analyze and score the product",
+      "7. Use Groq LLM to analyze and score the product intelligently",
       "8. Search for sustainable alternatives in the same category",
-      "9. Provide ranked recommendations with justifications"
+      "9. Provide ranked recommendations with justifications",
+      "10. Prioritize Brazilian alternatives when available"
     ],
     "scoring": {
-      "excellent": "Meets > 80% of criteria with relevant certifications - Highly sustainable",
-      "good": "Meets 60-80% of criteria - Good sustainability performance",
-      "acceptable": "Meets 40-60% of criteria - Moderate sustainability",
-      "poor": "Meets < 40% of criteria - Low sustainability, alternatives recommended"
+      "excellent": "90-100: Meets > 80% of criteria with relevant certifications - Highly sustainable",
+      "good": "70-89: Meets 60-80% of criteria - Good sustainability performance",
+      "acceptable": "50-69: Meets 40-60% of criteria - Moderate sustainability",
+      "poor": "0-49: Meets < 40% of criteria - Low sustainability, alternatives strongly recommended"
     },
-    "llm_prompt_template": "Analyze this product: {product_name}. Category: {category}. Context: {context}. Evaluate against these sustainability criteria: {criteria}. Check for certifications: {certifications}. Provide: 1) Sustainability score (0-100), 2) Strengths, 3) Weaknesses, 4) Three sustainable alternatives with justification."
+    "llm_prompt_template": "Analyze this product: {product_name}. Category: {category}. Context: {context}. Evaluate against these sustainability criteria: {criteria}. Check for certifications: {certifications}. Consider Brazilian context. Provide: 1) Sustainability score (0-100), 2) Strengths, 3) Weaknesses, 4) Three sustainable alternatives (prioritize Brazilian brands) with justification."
   },
 
   "metadata": {
-    "total_categories": 18,
-    "coverage": "Comprehensive - physical products, digital products, services",
+    "total_categories": 24,
+    "new_categories_added": [
+      "pet_care",
+      "water_conservation",
+      "menstrual_baby_products",
+      "garden_urban_agriculture",
+      "reusable_zero_waste",
+      "sharing_economy_services"
+    ],
+    "coverage": "Comprehensive - physical products, digital products, services, Brazilian market focus",
     "standards_referenced": [
       "ISO 14001 - Environmental Management",
       "ISO 26000 - Social Responsibility",
@@ -1076,12 +1570,19 @@
       "ESPR - Ecodesign for Sustainable Products Regulation",
       "EU Green Deal",
       "UN SDGs",
-      "TCFD - Task Force on Climate-related Financial Disclosures"
+      "TCFD - Task Force on Climate-related Financial Disclosures",
+      "EMBRAPA - Brazilian Agricultural Research",
+      "ANVISA - Brazilian Health Surveillance",
+      "ABNT - Brazilian Technical Standards"
     ],
     "special_focus": {
       "digital_sustainability": "Includes guidelines for software, AI/ML, cloud services, and data centers - addressing energy consumption of LLMs and blockchain",
-      "embrapa_integration": "Forest products guidelines can be extended from EMBRAPA SICOSIFlorestas document",
-      "dynamic_evaluation": "System uses LLM to understand context and apply guidelines intelligently, not hardcoded product matching"
+      "embrapa_integration": "Forest products guidelines extended from EMBRAPA SICOSIFlorestas document",
+      "dynamic_evaluation": "System uses LLM to understand context and apply guidelines intelligently, not hardcoded product matching",
+      "brazilian_market": "Prioritizes Brazilian brands, certifications, and bioeconomy products",
+      "pet_care_focus": "Comprehensive pet care category addressing major market gap",
+      "water_conservation": "Critical for Brazilian water scarcity regions",
+      "circular_economy": "Sharing economy and repair services integrated"
     }
   }
 }
